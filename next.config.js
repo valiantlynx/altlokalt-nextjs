@@ -15,7 +15,7 @@ module.exports = withPWA({
     },
     env: {
         hostDomain: "http://localhost:3000",
-        databaseDomain: "https://analytics.valiantlynx.com",
+        databaseDomain: "http://host.docker.internal:8990",
         productionDomain: "https://altlokalt.com",
         GA_MEASUREMENT_ID: "G-GB1M3DBFLW",
         private_key:
@@ -28,6 +28,8 @@ module.exports = withPWA({
             "analytics.valiantlynx.com",
             "altlokalt.com",
             "https://altlokalt.com",
+            "http://host.docker.internal:8990",
+
         ],
     },
     output: "standalone",
